@@ -1,0 +1,187 @@
+::-webkit-scrollbar {
+    width: 6px; 
+}
+
+::-webkit-scrollbar-track {
+    background: #00ff7b; 
+    border-radius: 10px; 
+}
+
+::-webkit-scrollbar-thumb {
+    background: white; 
+    border-radius: 10px; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #00b36e; 
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background: linear-gradient(#00b36e, #00ff7b, #00b36e);
+}
+
+header {
+    display: block;
+    align-items: center; 
+    padding: 20px; 
+    color: white; 
+    border-radius: 8px; 
+}
+
+.logo {
+    width: 150px; 
+    margin-right: 20px; 
+}
+
+header h1 {
+    text-align: center;
+    font-size: 25px; 
+    margin: 0; 
+
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-container {
+    flex: 0 0 45%; 
+    margin-right: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    align-items: center;
+}
+
+.preview-container {
+    flex: 1; 
+    max-width: 100%; 
+    overflow: auto; 
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+
+label {
+    font-size: 17px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+input {
+    font-size: 15px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus {
+    border-color: #00ff7b;
+}
+
+button {
+    font-size: 13px;
+    background-color: #019d4c;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #028340;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.message {
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #dff0d8; /* Verde claro */
+    color: #3c763d; /* Verde escuro */
+    border: 1px solid #d6e9c6; /* Borda verde clara */
+    border-radius: 5px;
+    display: none; /* Inicialmente escondido */
+    transition: opacity 0.5s ease; /* Transição suave */
+}
+
+#htmlCode {
+    background-color: #9d9d9d; 
+    box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.2);
+    padding: 10px; 
+    border-radius: 4px; 
+    overflow: auto; 
+    max-height: 200px; 
+}
+
+#htmlCode::-webkit-scrollbar {
+    height: 7px; 
+}
+
+#htmlCode::-webkit-scrollbar-track {
+    background: #888888; 
+    border-radius: 10px; 
+}
+
+#htmlCode::-webkit-scrollbar-thumb {
+    background: #656565; 
+    border-radius: 10px; 
+}
+
+#htmlCode::-webkit-scrollbar-thumb:hover {
+    background: #3c763d; 
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; 
+    }
+
+    .form-container {
+        flex: 1; 
+        margin-right: 0; 
+        margin-bottom: 20px; 
+    }
+
+    .preview-container {
+        flex: 1; 
+    }
+}
+
+@media (max-width: 480px) {
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    button {
+        padding: 8px; 
+        font-size: 14px; 
+    }
+
+    button {
+        width: 100%; 
+    }
+}

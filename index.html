@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gerador de Assinatura de Email</title>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="icon" href="images/icons8-favicon-32.png" type="image/x-icon" /> 
+</head>
+
+<body>
+
+    <header>
+        <img src="images/sua-logo.png" alt="Logo" class="logo">
+        <h1>Gerador de Assinatura de Email</h1>
+    </header>
+    <div class="container">
+        <div class="form-container">
+            <form id="signatureForm">
+                <label for="name">Nome Completo:</label><br />
+                <input type="text" id="name" required /><br /><br />
+
+                <label for="position">Cargo:</label><br />
+                <input type="text" id="position" required /><br /><br />
+
+                <label for="email">Email Corporativo:</label><br />
+                <input type="email" id="email" required /><br /><br />
+
+                <label for="phone">Telefone:</label><br />
+                <input type="tel" id="phone" placeholder="(XX) 9 XXXX-XXXX" required oninput="formatPhone(this)" /><br /><br />
+                
+                <button type="submit">Gerar Assinatura</button>
+            </form>
+        </div>
+
+        <div class="preview-container">
+            <div class="btn">
+                <button id="downloadBtn" style="display: none">
+                    Baixar como PNG
+                </button>
+                <button id="copyHtmlBtn" style="display: none">
+                    Copiar Código HTML
+                </button>
+            </div>
+            
+            <div id="downloadMsg" class="message" style="display: none;">Assinatura baixada com Sucesso!</div>
+            <div id="copyMessage" class="message" style="display: none;">Código HTML copiado para a área de transferência!</div>
+
+            <h3>Pré-visualização ⤵</h3>
+            <div id="preview"></div>
+            <h3 id="textCode" style="display: none;">Código HTML ⤵ </h3>
+            <pre id="htmlCode" style="display: none;"></pre>
+        </div>
+        </div>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</body>
+
+</html>
