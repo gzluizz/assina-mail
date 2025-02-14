@@ -42,8 +42,7 @@ O **Gerador de Assinatura de Email** é uma aplicação web que permite criar as
 │── images/
 │   ├── sua-logo.png
 │   ├── ffundo.png
-│── docs/
-│   ├── README.md
+├── README.md
 │── index.html
 
 ```
