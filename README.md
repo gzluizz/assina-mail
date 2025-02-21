@@ -51,14 +51,4 @@ O **Gerador de Assinatura de Email** é uma aplicação web que permite criar as
 - Para modificar a logo e o fundo da assinatura, substitua os arquivos `sua-logo.png` e `ffundo.png` na pasta `images/`.
 - Para alterar o layout ou cores, edite o arquivo `styles.css`.
 
-## Contribuição
-Sinta-se à vontade para contribuir com melhorias!
-1. Faça um fork do repositório.
-2. Crie uma nova branch (`git checkout -b feature-nova-funcionalidade`).
-3. Faça suas alterações e comite (`git commit -m 'Adiciona nova funcionalidade'`).
-4. Envie para o repositório (`git push origin feature-nova-funcionalidade`).
-5. Abra um Pull Request.
-
-## Licença
-Este projeto está sob a licença MIT - veja o arquivo [LICENSE](LICENSE) para mais detalhes.
 
